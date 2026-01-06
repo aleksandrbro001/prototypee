@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.ff {
+text-decoration: none;
+display: flex;
+margin-right: 50px;
+ font-size: 22px;
+ color:rgb(0, 0, 0);
+}
+
+.ff:last-child {
+    margin-right: 0;
+}
+
+.ff:hover {
+    color: aliceblue;
+}
+
+.logo {
+    background-image:url('img/icon.png');
+    width: 50px;
+    height: 50px;
+
+}
+
+.logo:hover {
+    background-image: url('img/icon2.png');
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    display: flex;
+    justify-content:space-around;
+    background-color: #92e3e0;
+    width: 1200px;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 5px rgb(117, 117, 117);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #569e9c;
+    width: 1200px;
+    height: 800px;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    
+}
+
+.box1 {
+    width: 85%;
+    height: 90%;
+    background-color: aqua;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #6dbdba;
+    width: 1200px;
+    height: 150px;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    header {
+         width: 1140px;
+    }
+
+    main {
+        width: 1140px;
+    }
+
+    footer {
+        width: 1140px;
+    }
+}
+
+@media (max-width: 1199px) {
+    header {
+         width: 960px;
+    }
+
+    main {
+        width: 960px;
+    }
+
+        footer {
+        width: 960px;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+         width: 720px;
+    }
+
+    main {
+        width: 720px;
+    }
+
+        footer{
+        width: 720px;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    header {
+         width: 540px;
+    }
+    .logo {
+        width: 50px;
+    }
+
+    .ff {
+        font-size: 17px;
+    }
+
+    main {
+        width: 540px;
+    }
+
+        footer {
+        width: 540px;
+    }
+}
+
+@media (max-width: 575px) {
+    header {
+         width: 100%;
+         display: flex;
+         justify-content:space-between;
+         align-items: center;
+    }
+        .logo {
+        width: 50px;
+    }
+        .ff {
+            font-size: 15px;
+
+        }
+
+        a:last-child {
+            display: none;
+        }
+
+                a:nth-last-of-type(2) {
+            display: none;
+        }
+        
+        main {
+            width: 100%;
+        }
+
+        footer {
+        width: 100%;
+    }
+    }
+
